@@ -1,5 +1,8 @@
 package edu.berkeley.aep;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FixedDepositAccount {
 
     private final double principal;
@@ -15,6 +18,13 @@ public class FixedDepositAccount {
     }
 
     private double interestAt(int termInYears) {
-        return (principal * annualRate * termInYears)/100;
+        return principal * (Math.pow((1 + annualRate/100), termInYears) - 1);
     }
-}
+
+    public List<Double> interestScheduleForTerms(int terms) {
+        List result = new ArrayList();
+        for(int i=1; i <= terms; i++) {
+            result.add(i-1, interestAt(i));
+        }
+        return result;
+    }}
