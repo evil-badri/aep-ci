@@ -9,7 +9,7 @@ public class FixedDepositAccountTest {
 
     @Test
     public void shouldReturnAmountAndInterestAtTermEnd(){
-        assertEquals(108.0, new FixedDepositAccount(100, 8).amountAt(1));
+        assertEquals(108.0, new FixedDepositAccount(100, 8).amountAt(1), 0.001);
     }
 
 }

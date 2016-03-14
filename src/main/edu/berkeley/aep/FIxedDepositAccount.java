@@ -1,6 +1,5 @@
 package edu.berkeley.aep;
 
-// Understands how to convert between different units
 public class FixedDepositAccount {
 
     private final double principal;
