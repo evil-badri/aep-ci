@@ -5,3 +5,5 @@ In a fixed deposit account, when I deposit a certain principal amount and at a g
 #####Story 2
 
 In a fixed deposit account, when I deposit a certain principal amount and at a given rate of interest (per annum), provide a mechanism to calculate the schedule of interest gains. The schedule should provide the accrued intersest at the end of each year. For example, a deposit of $100 should accrue $8 at the end of the first year, $16.64 at the end of the second year, $25.9712 at the end of the third year etc.
+
+######There are no stories here! Hahaha!
